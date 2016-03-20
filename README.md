@@ -19,4 +19,5 @@ You can use following shell scripts to run through crontab, which will check the
 4. copy the bash code to your script 
 5. crontab -e
 6. Add the code at bottom (note this cron is for 5m in 5m) .   */5 * * * * /opt/startifdown.sh >/dev/null 2>&1  
+7. Be sure the scripy is executable: chmod +x /opt/startifdown.sh 
 
