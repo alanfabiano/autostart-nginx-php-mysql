@@ -13,11 +13,11 @@ You can use following shell scripts to run through crontab, which will check the
 
 #Create your script and add it to the /opt/ folder.
 
-1. update-rc.d cron defaults
-2. /etc/init.d/cron start
-3. nano /opt/startifdown.sh 
+1. run -  "update-rc.d cron defaults"
+2. run - "/etc/init.d/cron start"
+3. run - "nano /opt/startifdown.sh" 
 4. copy the bash code to your script 
-5. crontab -e
+5. run "crontab -e"
 6. Add the code at bottom (note this cron is for 5m in 5m) .   */5 * * * * /opt/startifdown.sh >/dev/null 2>&1  
-7. Be sure the scripy is executable: chmod +x /opt/startifdown.sh 
+7. Be sure the scrip is executable: run - "chmod +x /opt/startifdown.sh" 
 
